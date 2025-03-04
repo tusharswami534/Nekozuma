@@ -9,11 +9,11 @@ const Footer = () => {
             <Image src={'/assets/images/footer-right-layer.webp'} width={575} height={174} className=' position-absolute bottom-0 footer-layers end-0 pointer-event-none' />
             <h2 className='footer-heading text-center text-white'>NEKOZUMA</h2>
             <div className='d-flex justify-content-center align-items-center mt-4 gap-4'>
-                <Link href={'/'}>
+                <Link className='footer-icon transition-300' href={'https://discord.com/'} target='_blank'>
                     <Image src={'/assets/images/discord-icon.webp'} width={32} height={32} alt='discord' />
                 </Link>
-                <Link href={'/'}>
-                    <Image src={'/assets/images/twitter-icon.webp'} width={32} height={32} alt='discord' />
+                <Link className='footer-icon transition-300' href={'https://x.com/?lang=en'} target='_blank'>
+                    <Image src={'/assets/images/twitter-icon.webp'} width={32} height={32} alt='twitter' />
                 </Link>
             </div>
         </div>

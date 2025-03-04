@@ -46,6 +46,11 @@ body{
   left: -23%;
 }
 
+.header-icon:hover{
+  scale: 1.2;
+}
+
+
 .header-links{
   gap: 32px;
 }
@@ -54,6 +59,10 @@ body{
     font-size: 16px;
     line-height: 130%;
     text-decoration: none !important;
+}
+
+.header-link:hover{
+  color: #3586FF !important;
 }
 
 .icon-div{
@@ -92,6 +101,10 @@ body{
   padding: 8px 24px;
   border-radius: 9px;
   background-color: #245AAB;
+}
+
+.hero-button:hover{
+ scale: 1.2;
 }
 
 .hero-heading::after{
@@ -187,6 +200,10 @@ margin-bottom: 36px;
 .footer-heading{
   font-size: 21.64px;
   line-height: 25.54px;
+}
+
+.footer-icon:hover{
+  scale: 1.2;
 }
 
 /* ===========================  Media Query =========================== */

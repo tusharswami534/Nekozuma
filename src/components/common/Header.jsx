@@ -18,13 +18,13 @@ const Header = () => {
                 </Link>
                 <div className={`d-flex justify-content-sm-end justify-content-center header-links responsive-navbar transition-300 ${open && 'show-nav'}`}>
                     {HEADER_LIST.map((item, index) => (
-                        <Link onClick={() => setOpen(false)} key={index} className='header-link text-white' href={item.link}>{item.title}</Link>
+                        <Link onClick={() => setOpen(false)} key={index} className='header-link transition-300 text-white' href={item.link}>{item.title}</Link>
                     ))}
                     <div className='d-flex icon-div'>
-                        <Link onClick={() => setOpen(false)} href={'/'}>
+                        <Link className='transition-300 header-icon' onClick={() => setOpen(false)} href={'https://discord.com/'} target='_blank'>
                             <Image src={'/assets/images/discord-icon.webp'} width={24} height={24} alt='discord' />
                         </Link>
-                        <Link onClick={() => setOpen(false)} href={'/'}>
+                        <Link className='transition-300 header-icon' onClick={() => setOpen(false)} href={'https://x.com/?lang=en'} target='_blank'>
                             <Image src={'/assets/images/twitter-icon.webp'} width={24} height={24} alt='twitter-icon' />
                         </Link>
                     </div>
