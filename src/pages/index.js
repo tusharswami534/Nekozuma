@@ -1,6 +1,6 @@
 import Footer from "@/components/common/Footer";
-import Header from "@/components/common/Header";
-import Marquee from "@/components/common/NekozumaMarquee";
+import Marquee from "@/components/home/NekozumaMarquee";
+import Hero from "@/components/home/Hero";
 import Story from "@/components/home/Story";
 import Team from "@/components/home/Team";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Hero />
       <Marquee />
       <Story />
       <Team />

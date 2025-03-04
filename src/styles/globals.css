@@ -14,7 +14,7 @@ body{
   font-family: "franklin", sans-serif;
 }
 
-/* Common  */
+/* =========================== Common ===========================  */
 .transition-300{
   transition: all 300ms linear;
 }
@@ -29,7 +29,11 @@ body{
   color: #D4E5FF;
 }
 
-/* Header */
+.cursor-pointer{
+  cursor: pointer;
+}
+
+/*=========================== Header =========================== */
 
 .header-container{
   max-width: 880px !important;
@@ -56,7 +60,51 @@ body{
   gap: 18px;
 }
 
-/* Story */
+/* =========================== Hero =========================== */
+
+.blue-layer{
+  z-index: -1 !important;
+}
+
+
+.hero-container{
+  padding-top:  164px;
+  max-width: 880px !important;
+  padding-bottom: 140px;
+}
+
+.hero-left-lightning{
+  bottom: -5%;
+}
+
+.hero-heading{
+  font-size: 64px;
+  line-height: 113%;
+  color: #3586FF;
+}
+
+.hero-description{
+  max-width: 502px;
+  margin-bottom: 43px;
+}
+
+.hero-button{
+  padding: 8px 24px;
+  border-radius: 9px;
+  background-color: #245AAB;
+}
+
+.hero-heading::after{
+  content: '';
+  position: absolute;
+  background-color: #3586FF;
+  width: 164px;
+  left: 0;
+  height: 1px;
+  top: -1px;
+}
+
+/* =========================== Story =========================== */
 
 .heading{
   font-size: 43px;
@@ -83,10 +131,18 @@ body{
   padding-bottom: 61px;
 }
 
-/* Team */
+/* =========================== Team =========================== */
 
 .team-container{
   max-width: 904px !important;
+}
+
+.team-card:hover .team-image{
+  scale: 1.2;
+}
+
+.team-section{
+  padding-bottom: 64px;
 }
 
 .card-position{
@@ -111,7 +167,16 @@ margin-bottom: 36px;
   height: 1px;
 }
 
-/* Footer */
+/* =========================== Marquee ===========================  */
+
+.marquee-image img{
+  transition: all 300ms linear;
+}
+.marquee-image img:hover{
+  scale: 1.2;
+}
+
+/* =========================== Footer =========================== */
 
 .footer{
   background-color: #245AAB;
@@ -124,38 +189,83 @@ margin-bottom: 36px;
   line-height: 25.54px;
 }
 
-/* Media Query */
+/* ===========================  Media Query =========================== */
 
 @media (max-width : 1199.98px) { 
-  /* Story */
+  /* ===========================  Story =========================== */
   .heading{
     font-size: 38px;
+  }
+
+  .story-image{
+    height: auto;
+  }
+
+/* =========================== Hero =========================== */
+
+.hero-container{
+  padding-bottom: 0;
+}
+  .hero-image{
+    max-width: 557px !important;
+    width: 100% !important;
+    height: auto;
+  }
+
+  .hero-layers{
+    width: 50%;
+    height: 20%;
   }
 
 }
 
 @media (max-width : 991.98px) {
   
-  /* Story */
+  /* =========================== Story =========================== */
 
   .heading{
     font-size: 32px;
   }
+  
   .story-section{
     gap: 36px;
+    padding: 40px 0px;
   }
+   /* =========================== team =========================== */
+   .team-heading{
+    margin-top: 40px;
+    margin-bottom: 24px;
+   }
+   .team-section{
+    padding: 40px 0px;
+   }
+
+
+/* =========================== Hero =========================== */
+.hero-container{
+  padding-top:  100px !important;
 }
 
+.hero-heading{
+  font-size: 50px;
+}
+
+/* =========================== Footer =========================== */
+.footer{
+  padding: 40px 0px;
+}
+
+}
 @media (max-width : 769.98px) {
 
-  /* Marquee */
+  /* =========================== Marquee  =========================== */
 
     .marquee-image {
       width: 200px;
       height: 200px;
     }
 
-    /* Story */
+    /* =========================== Story =========================== */
 
     .heading{
       font-size: 27px;
@@ -163,15 +273,53 @@ margin-bottom: 36px;
     .story-section{
       gap: 24px;
     }
+
+    /* ===========================  Hero =========================== */
+    
+    .hero-container{
+      padding-top:  60px !important;
+    }
+
+    .hero-heading{
+      font-size: 40px;
+    }
+     /* =========================== Story =========================== */
+     .team-heading{
+      margin-top:  30px;
+      margin-bottom: 16px;
+     }
+     /* =========================== Footer =========================== */
+     .footer-layers{
+      width: 50%;
+      height: 20%;
+     }
 }
 @media (max-width : 575.98px) {
-  /* Marquee */
+
+  /* =========================== Marquee =========================== */
+
   .marquee-image {
     width: 150px;
     height: 150px;
   }
 
-  /* Header */
+  /*=========================== Hero =========================== */
+
+  .hero-container{
+    padding-top:  40px !important;
+  }
+
+  .hero-heading{
+    font-size: 32px;
+  }
+
+  /*  =========================== story  ===========================  */
+
+  .story-heading{
+    margin-top: 40px !important;
+  }
+
+  /* =========================== Header =========================== */
 
   .header-button{
     background-color: #fff !important;

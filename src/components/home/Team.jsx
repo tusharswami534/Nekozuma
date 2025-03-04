@@ -6,14 +6,16 @@ import Link from 'next/link'
 
 const Team = () => {
     return (
-        <div>
+        <div className='team-section'>
             <div className='team-line mx-auto'></div>
             <CustomHeading heading={'Team'} headingClass={'team-heading'} />
             <div className=' container team-container'>
                 <div className=' d-flex flex-wrap justify-content-center gap-4 align-items-center'>
                     {TEAM_CARD_LIST.map((item, index) => (
                         <div key={index} className='team-card d-flex flex-column justify-content-center align-items-center'>
-                            <Image src={item.image} alt='founder' width={202} height={202} className='team-image' />
+                            <div className='overflow-hidden'>
+                                <Image src={item.image} alt='founder' width={202} height={202} className='team-image transition-300 pointer-event-none' />
+                            </div>
                             <h3 className='card-position text-center mt-4'>{item.position}</h3>
                             <p className='card-name common-description text-center mb-0 mt-2'>{item.name}</p>
                             <p className='common-description text-center mt-2 mb-0'>
