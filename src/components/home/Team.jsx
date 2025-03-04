@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Team = () => {
     return (
-        <div className='team-section'>
+        <div id='team' className='team-section'>
             <div className='team-line mx-auto'></div>
             <CustomHeading heading={'Team'} headingClass={'team-heading'} />
             <div className=' container team-container'>

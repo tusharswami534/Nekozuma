@@ -5,6 +5,10 @@
   src: url('../../public/assets/font/FranklinGothic-Heavy.otf');
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: "Sarabun", sans-serif !important;
   background: #1C2430 !important;

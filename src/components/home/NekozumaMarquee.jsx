@@ -5,7 +5,7 @@ import Marquee from "react-fast-marquee";
 
 const NekozumaMarquee = () => {
     return (
-        <div className='overflow-hidden'>
+        <div id='overview' className='overflow-hidden'>
             <Marquee pauseOnHover={true}>
                 {MARQUEE_LIST.map((item, index) => (
                     <div key={index} className='overflow-hidden marquee-image'>
